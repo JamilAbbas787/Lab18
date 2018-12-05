@@ -33,8 +33,17 @@ namespace ConsoleApp3
             list.PrintReverse();
         }
 
-        public static bool InsertAt (int index, Object o)
+        public static bool InsertAt<t> (this LinkedList<t> list , int index, Object o)
         {
+            if (list.Count >= index)
+            {
+                list.InsertAt(index, o);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
 
         }
 
