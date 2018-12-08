@@ -11,14 +11,17 @@ namespace ConsoleApp3
         static void Main(string[] args)
         {
             int[] numbers = { 1,2,3,2,2,4,5,5,7,8,4,4,1,0,10};
-            var numbersDistinct = FindDistinctWithDictionary(numbers);
+            var test = new LinkedList<int>();
+            //foreach (var number in numbers)
+            //{
+            //    test.AddLast(number);
+            //}
+            //LinkedList.PrintReverse(test);
+            FindDistinctWithDictionary(numbers);
             FindDistinctWithArray(numbers);
-            Console.WriteLine("Using a list:  ");
-            foreach (var number in numbersDistinct)
-            {
-                Console.WriteLine($"[{number.Key}]: {number.Value}");
-            }
-                 
+
+
+            Console.WriteLine("Big-O Estimate: O(N2) for both List and Array algorithm.");
             Console.ReadKey();
 
         }
@@ -46,6 +49,14 @@ namespace ConsoleApp3
                 
               
             }
+
+            Console.WriteLine("Using a list:  ");
+            foreach (var number in newDictionaryDistinct)
+            {
+                Console.WriteLine($"[{number.Key}]: {number.Value}");
+            }
+
+            Console.ReadKey();
 
             return newDictionaryDistinct;
         }
@@ -88,27 +99,51 @@ namespace ConsoleApp3
     {
         public static bool RemoveAt<t> (this LinkedList<t> list, int index)
         {
+            LinkedListNode<t> currentNode = list.First;
             if (list.ElementAt(index) != null)
             {
-                list.RemoveAt(index);
-                return true;
+                for (int i = 0; i < list.Count; i++)
+                {
+                    if (i == index)
+                    {
+                        list.Remove(currentNode);
+                    }
+                    currentNode = currentNode.Next;
+                }
+                                
             }
-            else
-            {
-                return false;
-            }
+            return false;
         }
+
 
         public static void PrintReverse<t>(this LinkedList<t> list)
         {
-            list.PrintReverse();
+            LinkedList<t> listInReverse = new LinkedList<t>();
+            foreach (var node in list)
+            {
+                listInReverse.AddFirst(node);
+            }
+            foreach (var node in listInReverse)
+            {
+                Console.WriteLine($"{node}");
+            }
         }
 
         public static bool InsertAt<t> (this LinkedList<t> list , int index, Object o)
         {
+            LinkedListNode<t> currentNode = list.First;
+ 
             if (list.Count >= index)
             {
-                list.InsertAt(index, o);
+                for (int i = 0; i < list.Count; i++)
+                {
+
+                    if (i == index - 1 )
+                    {
+                        list.AddAfter(currentNode , (t)o);
+                    }
+
+                }
                 return true;
             }
             else
