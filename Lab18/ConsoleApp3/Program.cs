@@ -129,7 +129,7 @@ namespace ConsoleApp3
             }
         }
 
-        public static bool InsertAt<t> (this LinkedList<t> list , int index, Object o)
+        public static bool InsertAt<t> (this LinkedList<t> list , int index, t o)
         {
             LinkedListNode<t> currentNode = list.First;
  
@@ -140,7 +140,7 @@ namespace ConsoleApp3
 
                     if (i == index - 1 )
                     {
-                        list.AddAfter(currentNode , (t)o);
+                        list.AddAfter(currentNode , o);
                     }
 
                 }
