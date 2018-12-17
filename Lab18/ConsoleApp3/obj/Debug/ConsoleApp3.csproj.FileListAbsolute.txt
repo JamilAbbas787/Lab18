@@ -5,3 +5,10 @@ C:\Users\jamil\Desktop\GrandCircus\Lab18\Lab18\ConsoleApp3\bin\Debug\ConsoleApp3
 C:\Users\jamil\Desktop\GrandCircus\Lab18\Lab18\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
 C:\Users\jamil\Desktop\GrandCircus\Lab18\Lab18\ConsoleApp3\obj\Debug\ConsoleApp3.exe
 C:\Users\jamil\Desktop\GrandCircus\Lab18\Lab18\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\obj\Debug\ConsoleApp3.csprojAssemblyReference.cache
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Users\jimmy\Documents\myProjects\Grand Circus\Students\Jamil\Lab18-2\Lab18\ConsoleApp3\obj\Debug\ConsoleApp3.pdb
